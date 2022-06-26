@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Continents{% endblock %}
+
+{% block body %}
+    <h1>Edit Continents</h1>
+
+    {{ include('continents/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_continents_index') }}">back to list</a>
+
+    {{ include('continents/_delete_form.html.twig') }}
+{% endblock %}
